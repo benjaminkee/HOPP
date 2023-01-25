@@ -31,7 +31,7 @@ class HybridDispatchBuilderSolver:
             
             'baseload' dictionary in dispatch options: 
             Contains information needed to run 'baseload' battery dispatch options
-            for details on 'baseload' inputs see :class:`hybrid.grid.Grid`
+            for details on 'baseload' inputs see :class:`hopp.grid.Grid`
 
         """
         self.opt = None

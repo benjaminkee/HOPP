@@ -3,10 +3,10 @@ import os
 import rapidjson 
 import PySAM.Singleowner as Singleowner
 
-from hybrid.dispatch.power_sources.trough_dispatch import TroughDispatch
+from hopp.dispatch.power_sources.trough_dispatch import TroughDispatch
 
-from hybrid.power_source import *
-from hybrid.csp_source import CspPlant
+from hopp.power_source import *
+from hopp.csp_source import CspPlant
 
 
 class TroughPlant(CspPlant):

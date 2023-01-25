@@ -12,7 +12,7 @@ def hopp_for_h2_floris(site, scenario, technologies, wind_size_mw, solar_size_mw
                 interconnection_size_mw, grid_connected_hopp=True, wind_om_cost_kw = 42):
     '''
     Runs HOPP for H2 analysis purposes
-    :param site: :class:`hybrid.sites.site_info.SiteInfo`,
+    :param site: :class:`hopp.sites.site_info.SiteInfo`,
         Hybrid plant site information which includes layout, location and resource data
     :param scenario: ``dict``,
         Dictionary of scenario options, includes location, year, technology pricing
@@ -22,11 +22,11 @@ def hopp_for_h2_floris(site, scenario, technologies, wind_size_mw, solar_size_mw
             ===============   =============================================
             Technology key    Class for reference
             ===============   =============================================
-            ``pv``            :class:`hybrid.pv_source.PVPlant`
-            ``wind``          :class:`hybrid.wind_source.WindPlant`
-            ``tower``         :class:`hybrid.tower_source.TowerPlant`
-            ``trough``        :class:`hybrid.trough_source.TroughPlant`
-            ``battery``       :class:`hybrid.battery.Battery`
+            ``pv``            :class:`hopp.pv_source.PVPlant`
+            ``wind``          :class:`hopp.wind_source.WindPlant`
+            ``tower``         :class:`hopp.tower_source.TowerPlant`
+            ``trough``        :class:`hopp.trough_source.TroughPlant`
+            ``battery``       :class:`hopp.battery.Battery`
             ===============   =============================================
     :param wind_size_mw: ``float``,
         Wind technology size in MW
@@ -58,7 +58,7 @@ def hopp_for_h2_floris(site, scenario, technologies, wind_size_mw, solar_size_mw
         Flag for on-grid operation. Enables buying/selling of energy to grid.
     :returns: 
     
-    :param hybrid_plant: :class: `hybrid.hybrid_simulation.HybridSimulation`,
+    :param hybrid_plant: :class: `hopp.hybrid_simulation.HybridSimulation`,
         Base class for simulation a Hybrid Plant
     :param combined_pv_wind_power_production_hopp: ``list``,
         (8760x1) hourly sequence of combined pv and wind power in kW

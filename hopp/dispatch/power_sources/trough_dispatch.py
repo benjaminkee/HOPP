@@ -3,7 +3,7 @@ import datetime
 
 import PySAM.Singleowner as Singleowner
 
-from hybrid.dispatch.power_sources.csp_dispatch import CspDispatch
+from hopp.dispatch.power_sources.csp_dispatch import CspDispatch
 
 
 class TroughDispatch(CspDispatch):

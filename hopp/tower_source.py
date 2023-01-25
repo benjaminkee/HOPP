@@ -5,12 +5,12 @@ from math import pi, log, sin
 
 import PySAM.Singleowner as Singleowner
 
-from hybrid.dispatch.power_sources.tower_dispatch import TowerDispatch
-from hybrid.dispatch.power_sources.csp_dispatch import CspDispatch
+from hopp.dispatch.power_sources.tower_dispatch import TowerDispatch
+from hopp.dispatch.power_sources.csp_dispatch import CspDispatch
 
 
-from hybrid.power_source import *
-from hybrid.csp_source import CspPlant
+from hopp.power_source import *
+from hopp.csp_source import CspPlant
 
 
 # TODO: Figure out where to put this...
@@ -50,7 +50,7 @@ class TowerPlant(CspPlant):
                height optimization will before system simulation, o.w., SolarPilot will just generate field based on
                inputs.
             #. ``scale_input_params``: (optional, default = True) bool, If True, HOPP will run
-               :py:func:`hybrid.tower_source.scale_params` before system simulation.
+               :py:func:`hopp.tower_source.scale_params` before system simulation.
         """
         financial_model = Singleowner.default('MSPTSingleOwner')
 

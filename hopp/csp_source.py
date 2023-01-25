@@ -7,12 +7,12 @@ import numpy as np
 import datetime
 import os
 
-from hybrid.pySSC_daotk.ssc_wrap import ssc_wrap
+from hopp.pySSC_daotk.ssc_wrap import ssc_wrap
 import PySAM.Singleowner as Singleowner
 
-from hybrid.dispatch.power_sources.csp_dispatch import CspDispatch
-from hybrid.power_source import *
-from hybrid.sites import SiteInfo
+from hopp.dispatch.power_sources.csp_dispatch import CspDispatch
+from hopp.power_source import *
+from hopp.sites import SiteInfo
 
 
 class CspOutputs:

@@ -99,14 +99,14 @@ class HybridSimulation:
             ===============   =============================================
             Technology key    Class for reference
             ===============   =============================================
-            ``pv``            :class:`hybrid.pv_source.PVPlant`
-            ``wind``          :class:`hybrid.wind_source.WindPlant`
-            ``tower``         :class:`hybrid.tower_source.TowerPlant`
-            ``trough``        :class:`hybrid.trough_source.TroughPlant`
-            ``battery``       :class:`hybrid.battery.Battery`
+            ``pv``            :class:`hopp.pv_source.PVPlant`
+            ``wind``          :class:`hopp.wind_source.WindPlant`
+            ``tower``         :class:`hopp.tower_source.TowerPlant`
+            ``trough``        :class:`hopp.trough_source.TroughPlant`
+            ``battery``       :class:`hopp.battery.Battery`
             ===============   =============================================
 
-        :param site: :class:`hybrid.sites.site_info.SiteInfo`,
+        :param site: :class:`hopp.sites.site_info.SiteInfo`,
             Hybrid plant site information which includes layout, location and resource data
 
         :param interconnect_kw: ``float``,
@@ -114,10 +114,10 @@ class HybridSimulation:
 
         :param dispatch_options: ``dict``,
             (optional) dictionary of dispatch options. For details see
-            :class:`hybrid.dispatch.hybrid_dispatch_options.HybridDispatchOptions`
+            :class:`hopp.dispatch.hybrid_dispatch_options.HybridDispatchOptions`
             (optional nested dictionary) ie: {'baseload': {'limit', 'compliance_factor}}
             dictionary with inputs for baseload power + ERS analysis.  For details see
-            :class:`hybrid.grid.Grid`
+            :class:`hopp.grid.Grid`
 
         :param cost_info: ``dict``,
             (optional) dictionary of cost information. For details see
@@ -133,8 +133,8 @@ class HybridSimulation:
             ============================   =======================================================
             Sim. Options Key               Reference
             ============================   =======================================================
-            ``skip_financial``             :func:`hybrid.power_source.PowerSource.simulate`
-            ``storage_capacity_credit``    :func:`hybrid.csp_source.CspPlant.simulate_financials`
+            ``skip_financial``             :func:`hopp.power_source.PowerSource.simulate`
+            ``storage_capacity_credit``    :func:`hopp.csp_source.CspPlant.simulate_financials`
             ============================   =======================================================
 
         .. TODO: I don't really like the above table

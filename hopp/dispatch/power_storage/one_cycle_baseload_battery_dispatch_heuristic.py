@@ -5,7 +5,7 @@ from pyomo.environ import units as u
 import PySAM.BatteryStateful as BatteryModel
 import PySAM.Singleowner as Singleowner
 
-from hybrid.dispatch.power_storage.one_cycle_battery_dispatch_heuristic import OneCycleBatteryDispatchHeuristic
+from hopp.dispatch.power_storage.one_cycle_battery_dispatch_heuristic import OneCycleBatteryDispatchHeuristic
 
 
 class OneCycleBaseloadBatteryDispatchHeuristic(OneCycleBatteryDispatchHeuristic):

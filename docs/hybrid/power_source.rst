@@ -12,6 +12,6 @@ Base class for energy generators:
    battery_storage.rst
    grid.rst
 
-.. autoclass:: hybrid.power_source.PowerSource
+.. autoclass:: hopp.power_source.PowerSource
     :members:
     :exclude-members: copy, plot

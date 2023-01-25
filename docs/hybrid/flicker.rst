@@ -6,16 +6,16 @@ Flicker Modeling
 
 ** Shadow functions **
 
-.. automodule:: hybrid.layout.shadow_flicker
+.. automodule:: hopp.layout.shadow_flicker
     :members:
 
 ** PV assumptions **
 
-.. automodule:: hybrid.layout.pv_module
+.. automodule:: hopp.layout.pv_module
     :members:
 
 ** Flicker models **
 
-.. autoclass:: hybrid.layout.flicker_mismatch.FlickerMismatch
+.. autoclass:: hopp.layout.flicker_mismatch.FlickerMismatch
     :members:
 
