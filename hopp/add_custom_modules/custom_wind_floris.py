@@ -3,12 +3,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 from floris.tools import FlorisInterface
 import csv
-import yaml
 
 
 class Floris:
 
     def __init__(self, config_dict, site, timestep=()):
+
+        if floris_version < 3.0:
+            raise EnvironmentError("Floris v3.1 or higher is required")
 
         self.fi = FlorisInterface(config_dict["floris_config"])
 
